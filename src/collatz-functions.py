@@ -50,3 +50,12 @@ def analyze_trajectory(n):
         'sequence': seq,
         'regions': regions
     }
+
+# Optimización: Manejo robusto de división por cero
+def analyze_trajectory(n):
+    # ... código existente ...
+    for i in range(1, len(seq)):
+        # ...
+        total_ops = j + k
+        # SOLUCIÓN: Evitar división por cero
+        x = j / total_ops if total_ops > 0 else 0.0  # ← Corregido
